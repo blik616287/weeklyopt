@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weeklyopt"
+version = "0.1.0"
+description = "Weekly options backtesting framework using synthetic Black-Scholes pricing"
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance>=0.2.30",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+]
+
+[project.optional-dependencies]
+validate = [
+    "lumibot>=3.0",
+    "thetadata>=1.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ipython",
+]
+
+[project.scripts]
+weeklyopt = "weeklyopt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

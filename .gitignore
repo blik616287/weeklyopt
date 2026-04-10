@@ -1,0 +1,34 @@
+CLAUDE.md
+.claude/
+
+# Credentials
+creds.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# weeklyopt cache
+.weeklyopt_cache/
+
+# ML model
+ml_exit_model.pkl
+
+# Theta Terminal
+*.pid
+*.jar
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
